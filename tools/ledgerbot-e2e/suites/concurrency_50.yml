@@ -1,0 +1,27 @@
+suite: concurrency_50
+target: e2e-main
+defaults:
+  timeout_sec: 25
+  append_run_id: true
+steps:
+  - name: user21_worldtime
+    account: user21
+    send: "北京时间"
+    expect_any: ["北京", "时间"]
+  - name: user22_calc
+    account: user22
+    send: "10+20"
+    expect_any: ["30"]
+  - name: user23_address_query
+    account: user23
+    send: "地址"
+    expect_any: ["地址", "暂无", "未设置"]
+  - name: user24_help
+    account: user24
+    send: "菜单"
+    expect_any: ["帮助", "菜单", "群控"]
+  - name: user25_rate
+    account: user25
+    send: "汇率对比"
+    expect_any: ["汇率", "欧易", "币安", "火币"]
+

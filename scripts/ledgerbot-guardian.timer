@@ -1,0 +1,12 @@
+[Unit]
+Description=Run LedgerBot Telegram poll Guardian every 30 seconds
+
+[Timer]
+OnBootSec=45s
+OnUnitActiveSec=30s
+RandomizedDelaySec=3s
+Persistent=true
+Unit=ledgerbot-guardian.service
+
+[Install]
+WantedBy=timers.target

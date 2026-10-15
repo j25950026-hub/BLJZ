@@ -1,0 +1,152 @@
+accounts:
+  - name: user01
+    role: owner
+    session: sessions/user01.session
+  - name: user02
+    role: local_operator
+    session: sessions/user02.session
+  - name: user03
+    role: local_operator
+    session: sessions/user03.session
+  - name: user04
+    role: local_operator
+    session: sessions/user04.session
+  - name: user05
+    role: local_operator
+    session: sessions/user05.session
+  - name: user06
+    role: local_operator
+    session: sessions/user06.session
+  - name: user07
+    role: global_operator
+    session: sessions/user07.session
+  - name: user08
+    role: global_operator
+    session: sessions/user08.session
+  - name: user09
+    role: global_operator
+    session: sessions/user09.session
+  - name: user10
+    role: global_operator
+    session: sessions/user10.session
+  - name: user11
+    role: member
+    session: sessions/user11.session
+  - name: user12
+    role: member
+    session: sessions/user12.session
+  - name: user13
+    role: member
+    session: sessions/user13.session
+  - name: user14
+    role: member
+    session: sessions/user14.session
+  - name: user15
+    role: member
+    session: sessions/user15.session
+  - name: user16
+    role: member
+    session: sessions/user16.session
+  - name: user17
+    role: member
+    session: sessions/user17.session
+  - name: user18
+    role: member
+    session: sessions/user18.session
+  - name: user19
+    role: member
+    session: sessions/user19.session
+  - name: user20
+    role: member
+    session: sessions/user20.session
+  - name: user21
+    role: concurrency_member
+    session: sessions/user21.session
+  - name: user22
+    role: concurrency_member
+    session: sessions/user22.session
+  - name: user23
+    role: concurrency_member
+    session: sessions/user23.session
+  - name: user24
+    role: concurrency_member
+    session: sessions/user24.session
+  - name: user25
+    role: concurrency_member
+    session: sessions/user25.session
+  - name: user26
+    role: concurrency_member
+    session: sessions/user26.session
+  - name: user27
+    role: concurrency_member
+    session: sessions/user27.session
+  - name: user28
+    role: concurrency_member
+    session: sessions/user28.session
+  - name: user29
+    role: concurrency_member
+    session: sessions/user29.session
+  - name: user30
+    role: concurrency_member
+    session: sessions/user30.session
+  - name: user31
+    role: concurrency_member
+    session: sessions/user31.session
+  - name: user32
+    role: concurrency_member
+    session: sessions/user32.session
+  - name: user33
+    role: concurrency_member
+    session: sessions/user33.session
+  - name: user34
+    role: concurrency_member
+    session: sessions/user34.session
+  - name: user35
+    role: concurrency_member
+    session: sessions/user35.session
+  - name: user36
+    role: soak_member
+    session: sessions/user36.session
+  - name: user37
+    role: soak_member
+    session: sessions/user37.session
+  - name: user38
+    role: soak_member
+    session: sessions/user38.session
+  - name: user39
+    role: soak_member
+    session: sessions/user39.session
+  - name: user40
+    role: soak_member
+    session: sessions/user40.session
+  - name: user41
+    role: soak_member
+    session: sessions/user41.session
+  - name: user42
+    role: soak_member
+    session: sessions/user42.session
+  - name: user43
+    role: soak_member
+    session: sessions/user43.session
+  - name: user44
+    role: soak_member
+    session: sessions/user44.session
+  - name: user45
+    role: soak_member
+    session: sessions/user45.session
+  - name: user46
+    role: soak_member
+    session: sessions/user46.session
+  - name: user47
+    role: soak_member
+    session: sessions/user47.session
+  - name: user48
+    role: soak_member
+    session: sessions/user48.session
+  - name: user49
+    role: soak_member
+    session: sessions/user49.session
+  - name: user50
+    role: soak_member
+    session: sessions/user50.session
+

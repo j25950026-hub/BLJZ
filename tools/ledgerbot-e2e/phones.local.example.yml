@@ -1,0 +1,102 @@
+phones:
+  - account: user01
+    phone: "+10000000001"
+  - account: user02
+    phone: "+10000000002"
+  - account: user03
+    phone: "+10000000003"
+  - account: user04
+    phone: "+10000000004"
+  - account: user05
+    phone: "+10000000005"
+  - account: user06
+    phone: "+10000000006"
+  - account: user07
+    phone: "+10000000007"
+  - account: user08
+    phone: "+10000000008"
+  - account: user09
+    phone: "+10000000009"
+  - account: user10
+    phone: "+10000000010"
+  - account: user11
+    phone: "+10000000011"
+  - account: user12
+    phone: "+10000000012"
+  - account: user13
+    phone: "+10000000013"
+  - account: user14
+    phone: "+10000000014"
+  - account: user15
+    phone: "+10000000015"
+  - account: user16
+    phone: "+10000000016"
+  - account: user17
+    phone: "+10000000017"
+  - account: user18
+    phone: "+10000000018"
+  - account: user19
+    phone: "+10000000019"
+  - account: user20
+    phone: "+10000000020"
+  - account: user21
+    phone: "+10000000021"
+  - account: user22
+    phone: "+10000000022"
+  - account: user23
+    phone: "+10000000023"
+  - account: user24
+    phone: "+10000000024"
+  - account: user25
+    phone: "+10000000025"
+  - account: user26
+    phone: "+10000000026"
+  - account: user27
+    phone: "+10000000027"
+  - account: user28
+    phone: "+10000000028"
+  - account: user29
+    phone: "+10000000029"
+  - account: user30
+    phone: "+10000000030"
+  - account: user31
+    phone: "+10000000031"
+  - account: user32
+    phone: "+10000000032"
+  - account: user33
+    phone: "+10000000033"
+  - account: user34
+    phone: "+10000000034"
+  - account: user35
+    phone: "+10000000035"
+  - account: user36
+    phone: "+10000000036"
+  - account: user37
+    phone: "+10000000037"
+  - account: user38
+    phone: "+10000000038"
+  - account: user39
+    phone: "+10000000039"
+  - account: user40
+    phone: "+10000000040"
+  - account: user41
+    phone: "+10000000041"
+  - account: user42
+    phone: "+10000000042"
+  - account: user43
+    phone: "+10000000043"
+  - account: user44
+    phone: "+10000000044"
+  - account: user45
+    phone: "+10000000045"
+  - account: user46
+    phone: "+10000000046"
+  - account: user47
+    phone: "+10000000047"
+  - account: user48
+    phone: "+10000000048"
+  - account: user49
+    phone: "+10000000049"
+  - account: user50
+    phone: "+10000000050"
+

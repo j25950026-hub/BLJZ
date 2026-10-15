@@ -1,0 +1,19 @@
+suite: private_smoke
+target: BL66888_bot
+defaults:
+  timeout_sec: 20
+  append_run_id: false
+steps:
+  - name: start
+    account: user01
+    send: "/start"
+    expect_any: ["菜单", "功能", "记账"]
+  - name: get_id
+    account: user01
+    send: "获取ID"
+    expect_any: ["当前用户ID"]
+  - name: orders
+    account: user01
+    send: "/orders"
+    expect_any: ["订单", "购买", "暂无"]
+

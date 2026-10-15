@@ -1,0 +1,29 @@
+[Unit]
+Description=Bilibili LedgerBot accounting robot
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+Type=simple
+User=ledgerbot
+Group=ledgerbot
+WorkingDirectory=/opt/bilibili-ledgerbot-20260704
+EnvironmentFile=/opt/bilibili-ledgerbot-20260704/.env
+EnvironmentFile=-/opt/bilibili-ledgerbot-20260704/current/release.env
+ExecStart=/opt/bilibili-ledgerbot-20260704/current/ledgerbot
+Restart=on-failure
+RestartSec=5
+KillSignal=SIGTERM
+TimeoutStopSec=30
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectHome=true
+ProtectSystem=full
+ProtectKernelTunables=true
+ProtectControlGroups=true
+RestrictSUIDSGID=true
+UMask=0077
+ReadWritePaths=/opt/bilibili-ledgerbot-20260704/data /opt/bilibili-ledgerbot-20260704/data/recovery /opt/bilibili-ledgerbot-20260704/logs /var/lib/ledgerbot/telegram-media
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,29 @@
+[Unit]
+Description=LedgerBot Telegram poll Guardian
+Wants=network-online.target
+After=network-online.target bilibili-ledgerbot.service
+ConditionPathExists=/opt/bilibili-ledgerbot-20260704/current/ledgerbot-guardian
+
+[Service]
+Type=oneshot
+User=root
+Group=ledgerbot
+WorkingDirectory=/opt/bilibili-ledgerbot-20260704
+Environment=LEDGERBOT_RELEASE_ROOT=/opt/bilibili-ledgerbot-20260704
+EnvironmentFile=/opt/bilibili-ledgerbot-20260704/.env
+EnvironmentFile=-/opt/bilibili-ledgerbot-20260704/current/release.env
+ExecStart=/usr/bin/flock -n -E 0 /run/lock/ledgerbot-guardian.lock /opt/bilibili-ledgerbot-20260704/current/ledgerbot-guardian
+TimeoutStartSec=2min
+NoNewPrivileges=true
+PrivateTmp=true
+PrivateDevices=true
+ProtectHome=true
+ProtectSystem=full
+ProtectKernelTunables=true
+ProtectControlGroups=true
+RestrictSUIDSGID=true
+RestrictAddressFamilies=AF_UNIX
+LockPersonality=true
+MemoryDenyWriteExecute=true
+UMask=0077
+ReadWritePaths=/opt/bilibili-ledgerbot-20260704/data/recovery /opt/bilibili-ledgerbot-20260704

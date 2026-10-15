@@ -1,0 +1,11 @@
+[Unit]
+Description=Schedule LedgerBot V2 production cutover at 01:00 Asia/Shanghai
+
+[Timer]
+OnCalendar=2026-08-04 01:00:00 Asia/Shanghai
+AccuracySec=1s
+Persistent=false
+Unit=bilibili-ledgerbot-v2-cutover.service
+
+[Install]
+WantedBy=timers.target

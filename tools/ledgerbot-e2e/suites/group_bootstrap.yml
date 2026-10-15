@@ -1,0 +1,19 @@
+suite: group_bootstrap
+target: e2e-main
+defaults:
+  timeout_sec: 20
+  append_run_id: true
+steps:
+  - name: show_group_id
+    account: user01
+    send: "显示群ID"
+    expect_any: ["当前群ID"]
+  - name: panel
+    account: user01
+    send: "群控面板"
+    expect_any: ["群控面板", "开始记账", "一键账单"]
+  - name: start_bookkeeping
+    account: user01
+    send: "开始记账"
+    expect_any: ["记账", "账期", "已开始"]
+

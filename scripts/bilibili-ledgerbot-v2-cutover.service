@@ -1,0 +1,10 @@
+[Unit]
+Description=One-shot LedgerBot V2 production cutover
+Wants=network-online.target
+After=network-online.target
+ConditionPathExists=/opt/bilibili-ledgerbot-20260704/.v2-cutover-20260803-0100/release/ledgerbot
+
+[Service]
+Type=oneshot
+ExecStart=/opt/bilibili-ledgerbot-20260704/.v2-cutover-20260803-0100/deploy_v2_cutover.sh
+TimeoutStartSec=15min

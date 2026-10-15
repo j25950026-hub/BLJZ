@@ -1,0 +1,27 @@
+suite: ledger_core
+target: e2e-main
+defaults:
+  timeout_sec: 20
+  append_run_id: true
+steps:
+  - name: start_bookkeeping
+    account: user01
+    send: "开始记账"
+    expect_any: ["记账", "账期", "已开始"]
+  - name: set_rate
+    account: user01
+    send: "设置汇率 7.2"
+    expect_any: ["汇率", "7.2", "已设置"]
+  - name: deposit
+    account: user02
+    send: "+100#E2E-deposit"
+    expect_any: ["入款", "100"]
+  - name: payout
+    account: user02
+    send: "-30#E2E-payout"
+    expect_any: ["下发", "30"]
+  - name: bill
+    account: user02
+    send: "一键账单"
+    expect_any: ["总入款", "总下发", "当前利润"]
+

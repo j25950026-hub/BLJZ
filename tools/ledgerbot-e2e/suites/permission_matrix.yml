@@ -1,0 +1,19 @@
+suite: permission_matrix
+target: e2e-main
+defaults:
+  timeout_sec: 20
+  append_run_id: true
+steps:
+  - name: operator_can_open_panel
+    account: user02
+    send: "群控面板"
+    expect_any: ["群控面板", "开始记账", "一键账单"]
+  - name: member_cannot_ledger
+    account: user11
+    send: "+999#E2E-no-permission"
+    expect_none: ["入款成功", "总入款"]
+  - name: member_can_calculate
+    account: user11
+    send: "1+1"
+    expect_any: ["2"]
+

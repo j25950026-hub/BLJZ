@@ -1,0 +1,10 @@
+.env
+accounts.yml
+phones.local.yml
+.venv/
+sessions/
+reports/
+*.session
+*.session-journal
+__pycache__/
+.pytest_cache/
